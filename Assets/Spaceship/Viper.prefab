@@ -167,6 +167,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d74493695750bbf468201ed4de603fca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6741476422007572782}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d74493695750bbf468201ed4de603fca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6014858132992671926}
   m_SourcePrefab: {fileID: 100100000, guid: d74493695750bbf468201ed4de603fca, type: 3}
 --- !u!1 &6084968353744037012 stripped
 GameObject:
@@ -185,10 +188,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066ff52401fd0648a5d553a3a083fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterController: {fileID: -6014858132992671926}
   _transform: {fileID: 6861786910299815470}
   _speed: 20
-  _horizontalSpeed: 15
-  _verticalSpeed: 10
+  _rotationSpeed: 90
+  _explosionPrefab: {fileID: 1962125657010613131, guid: c3d3f597fd0d8694487390cf53c97602, type: 3}
+  _projectilePrefab: {fileID: 1838285047294365209, guid: 402eddfa7ad550343ba9aacf5747f7e5, type: 3}
+--- !u!143 &-6014858132992671926
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084968353744037012}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.2964575
+  m_Radius: 1.153588
+  m_SlopeLimit: 90
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6861786910299815470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d74493695750bbf468201ed4de603fca, type: 3}
